@@ -1,5 +1,6 @@
 .container__carousel {
     width: 100vw;
+    margin-bottom: 5rem;
 }
 .container__carousel__div {
     display: flex;
