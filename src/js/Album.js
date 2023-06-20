@@ -9,7 +9,7 @@ let albums = [];
 function loadJSON(callback) {
   const load_json = new XMLHttpRequest();
   load_json.overrideMimeType('application/json');
-  load_json.open('GET', 'data/beatles_songs/beatles_songs.json', true); //aqui é onde fica o caminho do arquivo Json
+  load_json.open('GET', 'data/beatles_songs.json', true); //aqui é onde fica o caminho do arquivo Json
   load_json.onreadystatechange = function () {
     if (load_json.readyState === 4 && load_json.status === 200) {
       callback(JSON.parse(load_json.responseText));

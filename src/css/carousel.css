@@ -1,0 +1,22 @@
+.container__carousel {
+    width: 94vw;
+    margin: 0 auto 10rem auto;
+}
+.container__carousel__div {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+}
+.container__carousel__imgs {
+    flex: none;
+    width: 100%;
+    height: 650px;
+    scroll-snap-align: start;
+    pointer-events: none;
+}
+.container__carousel__imgs img {
+    width: 100%;
+    height: 100%;
+}

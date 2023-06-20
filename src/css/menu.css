@@ -1,20 +1,13 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+header {
+    margin: 2rem 0 3rem;
 }
-body {
-    background-image: linear-gradient(#0000002c, #858585,#f0f0f0f0);
-}
-
-/* Configuração Menu Desktop */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: 1rem;
     font-weight: bold;
-    /* border: 1px solid red; */
+    color: #ffffff;
+    height: 6rem;
 }
 nav h1 img{
     width: 100px;
@@ -48,7 +41,7 @@ nav ul li {
     padding: 2rem .3rem .5rem;
 }
 .menu-dropdown li:hover {
-    color: #ffffff;
+    color: #746f6f;
     transition: 0.3s;
 }
 .menu-dropdown li ul li {
@@ -63,6 +56,10 @@ nav ul li {
     display: flex;
     align-items: center;
     margin-left: 10px;
+    background: #fff;
+    padding: 0.1rem;
+    border-radius: 25px;
+    color: #000000;
 }
 .barra-pesquisa img {
     width: 19px;
@@ -72,29 +69,32 @@ nav ul li {
     transform: scale(1.3);
     transition: 0.4s;
 }
-/* FIM Configuração Menu Desktop */
 
-/* Configuração Carousel */
-.container__carousel {
-    width: 100vw;
-
-    margin-bottom: 100rem;
-}
-.container__carousel__div {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-
-}
-.container__carousel__imgs {
-    flex: none;
-    width: 100%;
-    height: 500px;
-    scroll-snap-align: start;
-    pointer-events: none;
-}
-.container__carousel__imgs img {
-    width: 100%;
-    height: 100%;
+@media screen and (max-width: 600px) {
+    header {
+        width: 110%;
+        position: relative;
+        z-index: 1;      
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    nav .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .barra-pesquisa {
+        margin-top: 1rem;
+    }
 }

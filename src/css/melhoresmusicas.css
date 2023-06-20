@@ -1,0 +1,43 @@
+body {
+    background-image:linear-gradient(transparent 0.2%, #3d3c3c 98%), url("../img/background_beatles_2.jpg");
+    background-repeat: repeat;
+    background-attachment:fixed;   
+}
+.maisTocadas {
+    width: 980px;
+    margin: 4rem auto;
+}
+.maisTocadas__titulo {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bolder;
+}
+.maisTocadas__subTitulo {
+    color: #e3e3e3;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    padding-left: 1.5rem;
+}
+.maisTocadas__ol {
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 400px;
+    align-content: space-around;
+}
+.maisTocadas__ol a {
+    margin: 1.5rem 0;
+    text-decoration: none;
+    color: rgb(53, 52, 52);
+}
+.maisTocadas__li {
+    padding: 0 0.5rem;
+    color:#ffffff;
+}
+.maisTocadas__li:hover {
+    background: #615e5e;
+    transition: 0.7s;
+    cursor: pointer;
+    border-radius: 5px;
+}

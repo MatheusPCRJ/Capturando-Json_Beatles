@@ -1,0 +1,35 @@
+.footer {
+    margin-top: 3rem;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-shrink: 0;    
+}
+
+.span__text {
+    font-family: var(--font-custom);
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--grey-bloco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.span__footer__icones {
+    margin: 0 8px;
+    width: 24px;
+    animation: pulsar 1s infinite alternate;
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(.8);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
