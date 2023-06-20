@@ -1,6 +1,6 @@
 
 document.querySelector(".container__carousel__div")
-    .addEventListener("wheel", e => {
+    e => {
         // console.log(e)
         if (e.deltaY > 0) {
             e.target.scrollBy(300, 0)
@@ -8,5 +8,5 @@ document.querySelector(".container__carousel__div")
             e.target.scrollBy(-300, 0)
         }
 
-    })
+    }
 
